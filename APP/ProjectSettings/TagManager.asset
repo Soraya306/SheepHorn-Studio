@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - object
+  - noobcet
+  - CAMA
+  - Charac1
+  - Charac2
+  - Sembrable
   layers:
   - Default
   - TransparentFX
