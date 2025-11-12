@@ -8,11 +8,13 @@ public class InventoryManager : MonoBehaviour
 {
     public   InventoryManager Instance;
     public List<ItemData> Items=new List<ItemData>();
+    public List<GameObject> GG=new List<GameObject>();
     public raycastpr ra;
     public Transform ItemContent;
     public GameObject InventoryItem;
-
+    public bool set=true;
     public ItemInvCont[] InventoruItems;
+    public Info inff;
 
     private void Awake()
     {
@@ -22,7 +24,14 @@ public class InventoryManager : MonoBehaviour
 
     public void add(ItemData item)
     {
-        Items.Add(item);
+        for (int i=0;i<GG.Count; i++)
+        {
+            if (item.Item.id == GG[i].GetComponent<ItemData>().Item.id)
+            {
+                Items.Add(GG[i].GetComponent<ItemData>());
+            }
+        }
+        
     }
     public void remove (ItemData item)
     {

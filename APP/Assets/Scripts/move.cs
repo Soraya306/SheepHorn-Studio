@@ -9,24 +9,24 @@ public class move : MonoBehaviour
 
     private float gravityValue = -9.81f;
 
-    public  CharacterController controller;
-    private Vector3 playerVelocity;
+    public  CharacterController controller; //Como el rigidbody
+    private Vector3 playerVelocity; //velocidad NO TOCAR
     private bool groundedPlayer;
 
-    private Vector2 input_data;
-    private Inputmaptest map;
+    private Vector2 input_data; // movimiento en dos dimensiones
+    private Inputmaptest map; //Acciones y botones que se pulsan "Movimientos"
     public Info inf;
     public GameObject sonic;
-    public GameObject position1;
+    public GameObject position1; //empty
     //DETECCION CON MAPA DE ACCIONES O COMO SE LLAME
     private void Awake()
     {
-       inf= GameObject.FindGameObjectWithTag("Finish").GetComponent<Info>();
+       inf= GameObject.FindGameObjectWithTag("Finish").GetComponent<Info>(); //ACTUALIZA INFO EN LOS CAMBIOS DE ESCENA
        
         if (inf.son1)
         {
             sonic.SetActive(true);
-            transform.position = position1.transform.position;
+            transform.position = position1.transform.position; //Cuando cambia de escena aparece en la posiscion de un empty
         }
         map = new Inputmaptest();
         input_data = Vector2.zero;

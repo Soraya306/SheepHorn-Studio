@@ -12,12 +12,13 @@ public class ItemPickup : MonoBehaviour
     public HUD EnergyHud;
     public PlayerStats player;
     public bool yes=false;
-    
+    public Info inf;
     public bool C=false;
 
     //MAPA ACCIONES
     private void Awake()
     {
+        inf= GameObject.FindGameObjectWithTag("Finish").GetComponent<Info>();
         EnergyHud.HUDSetup(player);
         player.Energy=player.MaxEnergy;
         ray = GameObject.FindGameObjectWithTag("Player").GetComponent<raycastpr>();
@@ -27,6 +28,7 @@ public class ItemPickup : MonoBehaviour
             if (ray.pick)
             {
                 Pickup();
+                inf.ids.Add(ray.hit.collider.gameObject.GetComponent<ItemData>().Item.id);
                 yes = true;
                 isPickup =false;
                 ray.pick = false;
@@ -54,8 +56,8 @@ public class ItemPickup : MonoBehaviour
         Man.Instance.add(ray.hit.collider.gameObject.GetComponent<ItemData>());
         if (!ray.siemb)
         {
-            Destroy(ray.hit.collider.gameObject);
-            //ray.hit.collider.gameObject.SetActive(false);
+           
+            ray.hit.collider.gameObject.SetActive(false);
             GameObject.Find("Suelo").GetComponent<Collider>().enabled = true;
         }
         else

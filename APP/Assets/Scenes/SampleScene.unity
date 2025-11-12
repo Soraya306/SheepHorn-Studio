@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250f4e55534860542a2e096355e422c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  info: {fileID: 422158303}
   Item: {fileID: 11400000, guid: c321d03bb2259254db242d971775b793, type: 2}
 --- !u!1 &149623359
 GameObject:
@@ -636,6 +637,9 @@ MonoBehaviour:
   c1: 0
   c2: 0
   info: {fileID: 0}
+  Suel1: {fileID: 2116773160}
+  Suel2: {fileID: 1920387962}
+  Suel3: {fileID: 528467376}
 --- !u!114 &159776936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,6 +1619,12 @@ MonoBehaviour:
   cambio: 0
   son1: 0
   pat1: 0
+  List: {fileID: 748573241}
+  IT: []
+  a: 0
+  it: {fileID: 0}
+  num1: 0
+  ids: 
 --- !u!1 &439926345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250f4e55534860542a2e096355e422c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  info: {fileID: 422158303}
   Item: {fileID: 11400000, guid: d3918da3c4e9e5b44bd477260d72b78d, type: 2}
 --- !u!1 &444958446
 GameObject:
@@ -1903,6 +1914,7 @@ MonoBehaviour:
   ray: {fileID: 159776935}
   saveSystem: {fileID: 422158301}
   inn: {fileID: 422158303}
+  set: {fileID: 748573241}
 --- !u!4 &448860806
 Transform:
   m_ObjectHideFlags: 0
@@ -2356,6 +2368,7 @@ GameObject:
   - component: {fileID: 748573242}
   - component: {fileID: 748573241}
   - component: {fileID: 748573243}
+  - component: {fileID: 748573244}
   m_Layer: 0
   m_Name: InventoryManager
   m_TagString: Respawn
@@ -2377,11 +2390,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
   Items: []
+  GG:
+  - {fileID: 7344743234754707268, guid: c0e46e8f8c588e341982291becaccdf2, type: 3}
+  - {fileID: 1204843494648676674, guid: cc452898b9a733442bbcbba32f180b79, type: 3}
   ra: {fileID: 159776935}
   ItemContent: {fileID: 1161456905}
   InventoryItem: {fileID: 622502761173248092, guid: a548733f74139624eaa5154a9abed177,
     type: 3}
+  set: 1
   InventoruItems: []
+  inff: {fileID: 0}
 --- !u!4 &748573242
 Transform:
   m_ObjectHideFlags: 0
@@ -2411,6 +2429,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 748573241}
   r: {fileID: 159776935}
+--- !u!114 &748573244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748573240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e85ef22f24166d4a80aa79f237dc88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &765964182
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +5051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patata
       objectReference: {fileID: 0}
+    - target: {fileID: 1756678939471000980, guid: cc452898b9a733442bbcbba32f180b79,
+        type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 422158303}
     - target: {fileID: 2664069576561584753, guid: cc452898b9a733442bbcbba32f180b79,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5109,6 +5144,7 @@ MonoBehaviour:
   EnergyHud: {fileID: 843265348}
   player: {fileID: 159776936}
   yes: 0
+  inf: {fileID: 422158303}
   C: 0
 --- !u!114 &4055515899053432972
 MonoBehaviour:
@@ -5131,6 +5167,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5546487102966556733, guid: c0e46e8f8c588e341982291becaccdf2,
+        type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 422158303}
     - target: {fileID: 6507329634570681201, guid: c0e46e8f8c588e341982291becaccdf2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5224,6 +5265,7 @@ MonoBehaviour:
   EnergyHud: {fileID: 843265348}
   player: {fileID: 159776936}
   yes: 0
+  inf: {fileID: 422158303}
   C: 0
 --- !u!114 &5060304186383260759
 MonoBehaviour:

@@ -8,6 +8,7 @@ public class ScenesManager : MonoBehaviour
     public raycastpr ray;
     public DataSaver saveSystem;
     public Info inn;
+    public InventoryManager set;
 
     private void Update()
     {
@@ -16,6 +17,7 @@ public class ScenesManager : MonoBehaviour
             //saveSystem.Save();
             inn.cambio = true;
             inn.posit();
+            set.set = false;
             SceneManager.LoadScene(1);
             ray.bat = false;
         }

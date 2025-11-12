@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2102680839017327523}
   - component: {fileID: 2644096593152945418}
   - component: {fileID: 1756678939471000980}
+  - component: {fileID: -2904042566399509191}
   m_Layer: 0
   m_Name: Patata
   m_TagString: object
@@ -116,6 +117,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 250f4e55534860542a2e096355e422c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 0}
+  Item: {fileID: 11400000, guid: c321d03bb2259254db242d971775b793, type: 2}
+--- !u!114 &-2904042566399509191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204843494648676674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2739bbf26fb57b04a944dec1958d4e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: c321d03bb2259254db242d971775b793, type: 2}

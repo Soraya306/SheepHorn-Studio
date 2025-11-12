@@ -35,6 +35,7 @@ public class BattleSystem : MonoBehaviour
     {
         ju.cambio = true;
         ju.son1 = true;
+        ju.a=true;
         SceneManager.LoadScene(0);
         
        

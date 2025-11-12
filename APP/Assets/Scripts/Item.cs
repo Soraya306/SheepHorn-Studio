@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Item : ScriptableObject
 {
     //DATOS DE LOS ITEMS 
-
+    [SerializeField]
     public int id;
     public string itemName;
     public int value;
