@@ -33,6 +33,7 @@ public class Info : MonoBehaviour
 
     }
     
+    //GUARDA LA POSICION DEL OBJETO ANTES DE CAMBIAR DE ESCENA
     public void posit()
     {
         posx = Jug.transform.position.x;

@@ -6,7 +6,7 @@ using System.IO;
 
 public class DataSaver : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public int what = 0;
     public GameObject obj;
     public PlayerData puro_data;
@@ -16,11 +16,8 @@ public class DataSaver : MonoBehaviour
     private void Awake()
     {
         obj = GameObject.FindGameObjectWithTag("Player");
-        obj.transform.position = new Vector3(inf.posx, inf.posy, inf.posz);
-        if (inf.cambio)
-        {
-           
-        }
+        obj.transform.position = new Vector3(inf.posx, inf.posy, inf.posz); //PONE EN LA POSICION
+        
         inf.cambio = false;
         
         
@@ -28,6 +25,7 @@ public class DataSaver : MonoBehaviour
     
     public void Save()
     {
+        //NO TOCAR
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/MyGameData.dat");
 
@@ -36,8 +34,8 @@ public class DataSaver : MonoBehaviour
         puro_data.dat.positionx=obj.transform.position.x;
         puro_data.dat.positiony=obj.transform.position.y;
         puro_data.dat.positionz=obj.transform.position.z;
-      //  puro_data.stats.name = "luisja";
-
+      
+        //EL GUARDADO
         bf.Serialize(file, puro_data);
         file.Close();
     }
@@ -46,6 +44,7 @@ public class DataSaver : MonoBehaviour
     {
         if (File.Exists(Application.persistentDataPath + "/MyGameData.dat"))
         {
+            //CARGA EL SAVE
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Open(Application.persistentDataPath + "/MyGameData.dat", FileMode.Open);
             PlayerData puro_data = bf.Deserialize(fs) as PlayerData;
@@ -53,9 +52,7 @@ public class DataSaver : MonoBehaviour
 
             if (puro_data != null)
             {
-                /* Debug.Log("X "+ puro_data.dat.positionx);
-                 Debug.Log("Y " + puro_data.dat.positiony);
-                 Debug.Log("Z " + puro_data.dat.positionz);*/
+               
 
                 obj.GetComponent<CharacterController>().enabled = false;
                 obj.transform.position = new Vector3(puro_data.dat.positionx,puro_data.dat.positiony,puro_data.dat.positionz);

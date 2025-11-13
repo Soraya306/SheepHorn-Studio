@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerData 
 {
     
-
+    //LO GUARDADO NO TOCAR
 
     [Serializable]
     public struct PlayerDatas

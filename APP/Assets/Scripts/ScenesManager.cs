@@ -6,7 +6,7 @@ using UnityEngine;
 public class ScenesManager : MonoBehaviour
 {
     public raycastpr ray;
-    public DataSaver saveSystem;
+   
     public Info inn;
     public InventoryManager set;
 
@@ -14,7 +14,7 @@ public class ScenesManager : MonoBehaviour
     {
         if (ray.bat)
         {
-            //saveSystem.Save();
+           
             inn.cambio = true;
             inn.posit();
             set.set = false;

@@ -69,16 +69,8 @@ public class ItemPickup : MonoBehaviour
         }
 
 
-        /* if (ray.o.transform.childCount != 0)
-         {
-
-
-         }
-         else
-         {
-
-         }
- */
+        
+ 
 
 
 
@@ -92,10 +84,7 @@ public class ItemPickup : MonoBehaviour
 
   
 
-    private void Update()
-    {
-       
-    }
+    
 
 
 }

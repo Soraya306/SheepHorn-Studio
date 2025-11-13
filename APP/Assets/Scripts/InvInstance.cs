@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InvInstance : MonoBehaviour
 {
+    //NO
 
     public static InvInstance instance;
     private void Awake()

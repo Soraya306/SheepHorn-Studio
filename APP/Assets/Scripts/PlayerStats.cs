@@ -26,9 +26,7 @@ public class PlayerStats : MonoBehaviour
         Data = save.datas;
 
        
-       // position.x = Data.position[0];
-        //position.y = Data.position[1];
-        //position.z = Data.position[2];
+     
         transform.position = position;
     }
 }

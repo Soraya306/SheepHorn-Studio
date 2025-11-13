@@ -373,10 +373,9 @@ public class raycastpr : MonoBehaviour
                 
                 obj = Instantiate(Fres);
                 obj.transform.position = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, hit.collider.gameObject.transform.position.z);
-                //o = hit.collider.gameObject.GetComponent<Collider>();
-                //o.enabled = false;
+                
                 obj.transform.SetParent(hit.collider.gameObject.transform);
-                //o = hit.collider.gameObject.GetComponentInParent<Collider>();
+                
                 siemb = true;
 
 
@@ -389,7 +388,7 @@ public class raycastpr : MonoBehaviour
             {
                 if (picka)
                 {
-                   //o.enabled = true;
+                   
 
                     obj.transform.SetParent(null);
                 }

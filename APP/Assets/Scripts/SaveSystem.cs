@@ -3,7 +3,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.EventSystems;
-
+//NO SE USA
 public class SaveSystem : MonoBehaviour
 {
     public PlayerData datas;

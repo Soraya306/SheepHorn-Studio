@@ -3,7 +3,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 public class GameInstance : MonoBehaviour
 {
-
+    //SINGLETON
+    //HACE QUE NO SE ELIMINE EL OBJETO ENTRE ESCENAS
 
     public static GameInstance instance = null;
 

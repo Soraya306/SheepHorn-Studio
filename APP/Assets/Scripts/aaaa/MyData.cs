@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+//NO SE USA
 [Serializable]
 public class MyData
 {
