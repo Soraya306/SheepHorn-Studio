@@ -26,7 +26,9 @@ public class move : MonoBehaviour
         if (inf.son1)
         {
             sonic.SetActive(true);
+            controller.enabled = false;
             transform.position = position1.transform.position; //Cuando cambia de escena aparece en la posiscion de un empty
+            controller.enabled = true;
         }
         map = new Inputmaptest();
         input_data = Vector2.zero;
@@ -45,7 +47,7 @@ public class move : MonoBehaviour
 
         };
 
-        controller = gameObject.AddComponent<CharacterController>();
+        controller = gameObject.GetComponent<CharacterController>();
     }
 
     private void OnEnable()

@@ -280,7 +280,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 422158301}
+      - m_Target: {fileID: 330585550}
         m_TargetAssemblyTypeName: DataSaver, Assembly-CSharp
         m_MethodName: Load
         m_Mode: 1
@@ -464,6 +464,7 @@ GameObject:
   - component: {fileID: 159776934}
   - component: {fileID: 159776935}
   - component: {fileID: 159776936}
+  - component: {fileID: 159776937}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -483,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6078d93dfcb227144a92d81192d17d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 159776937}
   inf: {fileID: 0}
   sonic: {fileID: 238342621}
   position1: {fileID: 510464131}
@@ -661,6 +662,32 @@ MonoBehaviour:
       positiony: 0
       positionz: 0
   position: {x: 0, y: 0, z: 0}
+--- !u!143 &159776937
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159776927}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &230052550
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1015,7 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
+  - component: {fileID: 330585550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1225,6 +1253,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &330585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275478094cb1b42448fdd2e5e244ceb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  what: 0
+  obj: {fileID: 159776927}
+  puro_data:
+    dat:
+      positionx: 0
+      positiony: 0
+      positionz: 0
+  inf: {fileID: 422158303}
 --- !u!1 &348034007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,7 +1623,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422158299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 275478094cb1b42448fdd2e5e244ceb3, type: 3}
   m_Name: 
@@ -1912,7 +1960,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ray: {fileID: 159776935}
-  saveSystem: {fileID: 422158301}
   inn: {fileID: 422158303}
   set: {fileID: 748573241}
 --- !u!4 &448860806
@@ -2060,7 +2107,7 @@ Transform:
   m_GameObject: {fileID: 510464131}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.76, y: 0.080004945, z: -6.52}
+  m_LocalPosition: {x: -8.76, y: 0, z: -6.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2398,7 +2445,6 @@ MonoBehaviour:
   InventoryItem: {fileID: 622502761173248092, guid: a548733f74139624eaa5154a9abed177,
     type: 3}
   set: 1
-  InventoruItems: []
   inff: {fileID: 0}
 --- !u!4 &748573242
 Transform:
@@ -4797,7 +4843,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 422158301}
+      - m_Target: {fileID: 330585550}
         m_TargetAssemblyTypeName: DataSaver, Assembly-CSharp
         m_MethodName: Save
         m_Mode: 1

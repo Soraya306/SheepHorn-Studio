@@ -48,7 +48,7 @@ public class raycastpr : MonoBehaviour
     private void Awake()
     {
         info=GameObject.FindGameObjectWithTag("Finish").GetComponent<Info>();
-
+        Man=GameObject.Find("InventoryManager").GetComponent<InventoryManager>();
        
 
 
