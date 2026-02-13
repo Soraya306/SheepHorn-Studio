@@ -4,20 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - object
-  - noobcet
-  - CAMA
-  - Charac1
-  - Charac2
-  - Sembrable
+  - InfoSaved
+  - planta
+  - puerta
+  - Bed
+  - tienda
+  - Tierras
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Suelo
   - Water
   - UI
-  - 
+  - Puerta
   - 
   - 
   - 

@@ -6,9 +6,37 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Battle.unity
-    guid: 64c173f1004385c4db473cb359fb1adf
-  m_configObjects: {}
+    path: Assets/Scenes/MainGame.unity
+    guid: 93355b3ea4b61314bb53f281935796bc
+  - enabled: 1
+    path: Assets/Scenes/CasaSerpiente.unity
+    guid: c440e30c3482de947a57875a28540bed
+  - enabled: 1
+    path: Assets/Scenes/Gallinero.unity
+    guid: 3e33579c8bcfa2e48993e91a0bd5f54f
+  - enabled: 1
+    path: Assets/Scenes/Vaqueria.unity
+    guid: 49726f7acbf339648869205ea9a8b69a
+  - enabled: 1
+    path: Assets/Scenes/Pocilga.unity
+    guid: 1db10550aa23eb346beaee29da0277f0
+  - enabled: 1
+    path: Assets/Scenes/BattleScenes/CarneroFight.unity
+    guid: dd4d36060c0e22846a0c89153683a8ed
+  - enabled: 1
+    path: Assets/Scenes/BattleScenes/GallinaFight.unity
+    guid: 92c8300b8bcf7634ab251f51459c151c
+  - enabled: 1
+    path: Assets/Scenes/BattleScenes/CerdoFight.unity
+    guid: 51a564e57d288c44fa7c8c10830c28b5
+  - enabled: 1
+    path: Assets/Scenes/BattleScenes/VacaFight.unity
+    guid: 13bda7e79116f0f48bce09d147381bb8
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 9d28c2ac4e9d61d46b681b57c4ef2a67,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: d9103dc80e073454985b717c9a675406,
+      type: 2}

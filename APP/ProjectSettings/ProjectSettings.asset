@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 228b08c9861a7154c98886178918d809
+  productGUID: 9c6f148eb2e17574eb612b2d2ec4f0c0
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Poronga
+  productName: Scale Ground
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -843,14 +843,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Poronga
+  metroPackageName: Scale Ground
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Poronga
+  metroApplicationDescription: Scale Ground
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -920,10 +920,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: affe16da-19a1-48a4-ad00-f177147a4e87
+  cloudProjectId: e20f7775-8b7f-4cad-99ad-395846ef0537
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Poronga
+  projectName: Scale Ground
   organizationId: isabel876
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
